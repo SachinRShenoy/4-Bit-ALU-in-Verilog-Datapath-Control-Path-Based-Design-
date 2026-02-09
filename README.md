@@ -7,6 +7,14 @@ This repository implements a **4-bit Arithmetic Logic Unit (ALU)** in Verilog us
 The ALU supports arithmetic, logical, shift, and comparison operations, along with **status flags** (Zero, Sign, Overflow).  
 The design is **purely combinational**, synthesizable, and verified using a comprehensive testbench.
 
+## File Structure
+```
+├── design.sv        
+├── testbench.sv     
+├── README.md
+└── waveforms
+```
+
 This project is intended for:
 - Digital Design / Computer Architecture learning
 - Understanding datapath vs control-path separation
@@ -140,17 +148,6 @@ OF_sub = (A[3] ^ B[3]) & (A[3] ^ subdif[3]);
 - Performs no arithmetic
 
 This mirrors how real CPU ALUs are implemented and avoids recomputation.
-
----
-
-## File Structure
-```
-├── design.sv        # ALU implementation
-├── testbench.sv     # Comprehensive verification testbench
-├── README.md        # Documentation
-└── waveforms/       # (Optional) GTKWave screenshots
-```
-
 
 ---
 
